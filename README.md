@@ -1,36 +1,36 @@
 # ScrapingRecettes
   Ce projet est un script de scraping conçu pour extraire des recettes africaines à partir du site Recettes Africaines. Le script récupère des informations telles que le titre de la recette, la catégorie, les ingrédients, et les instructions, et les sauvegarde dans un fichier JSON.
 
-# Fonctionnalités
-  -Extraction des catégories de recettes
-  -Navigation dans les pages de chaque catégorie
-  -Extraction des détails des recettes : titre, lien, ingrédients, instructions
-  -Sauvegarde des données dans un fichier structuré JSON
+## Fonctionnalités
+- **Extraction des catégories de recettes**
+- **Navigation dans les pages de chaque catégorie**
+- **Extraction des détails des recettes** : titre, lien, ingrédients, instructions
+- **Sauvegarde des données** dans un fichier structuré JSON
 
-# Prérequis
+## Prérequis
   Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
-  -Python 3.x
-  -Les bibliothèques Python suivantes (que vous pouvez installer avec pip) :
-    requests : pour faire des requêtes HTTP et récupérer le contenu des pages web
-    BeautifulSoup4 : pour parser et extraire les informations du contenu HTML
+  - **Python 3.x**
+- Les bibliothèques Python suivantes (que vous pouvez installer avec `pip`) :
+  - `requests` : pour faire des requêtes HTTP et récupérer le contenu des pages web
+  - `BeautifulSoup4` : pour parser et extraire les informations du contenu HTML
 
-# Installation
+## Installation
   Clonez ce dépôt sur votre machine locale puis accédez au répertoire du projet.
 
-# Utilisation
+## Utilisation
   Exécutez le script pour commencer à scraper les recettes
 Le script est configuré pour sauvegarder les données récupérées dans un fichier JSON.
 
-# Structure des données extraites
+## Structure des données extraites
   Les données extraites par le script comprennent les informations suivantes pour chaque recette :
 
-  Catégorie : La catégorie de la recette (ex. "Beignets Africains").
-  Titre : Le titre de la recette (ex. "Beignets de farine").
-  Lien : Le lien URL de la recette.
-  Ingrédients : La liste des ingrédients nécessaires pour la recette.
-  Instructions : Les étapes à suivre pour préparer la recette.
+  - **Catégorie** : La catégorie de la recette (ex. "Beignets Africains").
+  - **Titre** : Le titre de la recette (ex. "Beignets de farine").
+  - **Lien** : Le lien URL de la recette.
+  - **Ingrédients** : La liste des ingrédients nécessaires pour la recette.
+  - **Instructions** : Les étapes à suivre pour préparer la recette.
 
-# Exemple de sortie en format JSON
+## Exemple de sortie en format JSON
   [
   {
           "categorie": "Beignets Africains",
@@ -41,6 +41,6 @@ Le script est configuré pour sauvegarder les données récupérées dans un fic
       }
       ]
 
-# Notes importantes
-  Ce script de scraping respecte les termes d'utilisation du site source. Assurez-vous de ne pas surcharger le serveur en ajoutant des pauses (comme time.sleep(1)) entre les requêtes.
-Le scraping de données peut être soumis aux droits d'auteur et aux conditions d'utilisation du site web source. Utilisez ce script à des fins personnelles ou éducatives, et assurez-vous de respecter les droits d'auteur.
+## Notes importantes
+  - **Ce script de scraping respecte les termes d'utilisation du site source. Assurez-vous de ne pas surcharger le serveur en ajoutant des pauses (comme time.sleep(1)) entre les requêtes.**
+  - **Le scraping de données peut être soumis aux droits d'auteur et aux conditions d'utilisation du site web source. Utilisez ce script à des fins personnelles ou éducatives, et assurez-vous de respecter les droits d'auteur.**
