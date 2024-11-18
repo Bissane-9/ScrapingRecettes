@@ -74,7 +74,7 @@ if response.status_code == 200:
                     text = p.get_text().strip()
 
                     # Vérifier si le texte correspond à "Ingrédients" ou "Ingredients"
-                    if "Ingrédients" in text or "Ingredients" in text:
+                    if "Ingrédients" in text or "Ingredients" in text or "Ingrédient" in text or "Ingredient" in text:
                         is_ingredient_section = True
                         is_instruction_section = False
                         continue
